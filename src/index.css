@@ -1,13 +1,151 @@
-body {
+body{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.App{
+  position: relative;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 8px;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.linkHeader .link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #535e5e;
+  font-size: 15px;
+}
+
+.buttonHeader {
+  display: flex;
+  margin-left: 10px;
+}
+
+.buttonHeader .btn {
+  background: url(./images/dot.png) no-repeat center;
+  border-radius: 50%;
+  height: 37px;
+  width: 37px;
+  background-size: 18px;
+  margin-right: 15px;
+  border: none
+}
+
+.buttonHeader .btnAvatar .btn {
+  background: url(./images/avatar.png) no-repeat center;
+  border-radius: 50%;
+  height: 37px;
+  width: 37px;
+  background-size: 40px;
+  border: none
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgBody{
+  margin-top: 100px;
+}
+
+.inputDiv {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.input{
+  padding: 10px 50px;
+  width: 490px;
+  font-size: 20px;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  display: block;
+}
+.input:focus {
+  outline: none;
+}
+.inputDiv::before {
+  content: '';
+  background-image: url(./images/icons8-search-32.png);
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.inputDiv::after {
+  content: '';
+  background-image: url(./images/icons8-microphone-24.png);
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.buttonBody {
+  display: flex;
+  width: 330px;
+  margin: 0 auto 25px;
+  justify-content: space-between;
+}
+.buttonBody .btn {
+  font-size: 16px;
+  color:#535e5e;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.buttonBody .btn:hover {
+  border: 1px solid rgba(156, 154, 154, 0.952);
+}
+
+.footer{
+  color: grey;
+  background-color: #f2f2f2;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.languageFooter{
+    padding: 8px;
+    border-bottom: 2px solid #e0e1e4;
+}
+
+.linkFooter{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.aboutLink{
+display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 550px;
+    text-decoration: none;
+}
+
+.footer .link{
+  text-decoration: none;
+  color: grey;
+}
+
+.navLink{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 360px;
+    text-decoration: none;
 }
