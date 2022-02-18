@@ -4,18 +4,16 @@ import Link from './link';
 
 const Header = () => {
     return (
-        <>
-            <div className='Header'>
+            <div className='header'>
                 <div className='buttonHeader'>
                     <Button text = {''}/>
-                   <div className='btn-2'> <Button text = {''}/></div>
+                   <div className='btnAvatar'> <Button text = {''}/></div>
                 </div>
                 <div className='linkHeader'>
                     <Link text = {'Почта'}/>
                     <Link text = {'Картинки'}/>
                 </div>
             </div>
-        </>
     );
 };
 

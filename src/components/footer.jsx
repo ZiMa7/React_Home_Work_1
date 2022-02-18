@@ -4,8 +4,7 @@ import Language from './language';
 
 const Footer = () => {
     return (
-        <>
-            <div className='Footer'>
+            <div className='footer'>
                 <div className='languageFooter'>
                     <Language text = {'Українська'}/>
                 </div>
@@ -23,7 +22,6 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </>
     );
 };
 
